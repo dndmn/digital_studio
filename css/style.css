@@ -1,0 +1,66 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  background-image: url(../images/Background.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+:root {
+  --primary-white-color: #FFFFFF;
+  --header-bgc: #13131580;
+  --primary-font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: var(--header-bgc);
+}
+
+.header__image {
+  cursor: pointer;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header__list-item {
+  font-family: var(--primary-font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  color: var(--primary-white-color);
+  cursor: pointer;
+}
+
+.about__studio {
+  font-family: var(--primary-font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--primary-white-color);
+}
+
+.header__phone-link {
+  font-family: var(--primary-font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  color: var(--primary-white-color);
+}
