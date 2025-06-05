@@ -43,7 +43,7 @@ body {
 .header__list-item {
   font-family: var(--primary-font-family);
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 100%;
   color: var(--primary-white-color);
   cursor: pointer;
@@ -52,7 +52,7 @@ body {
 .about__studio {
   font-family: var(--primary-font-family);
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 100%;
   color: var(--primary-white-color);
 }
@@ -60,7 +60,75 @@ body {
 .header__phone-link {
   font-family: var(--primary-font-family);
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 100%;
+  color: var(--primary-white-color);
+}
+
+.main {
+  padding-top: 80px;
+  padding-bottom: 32px;
+}
+
+.main__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__description-digital {
+  font-family: var(--primary-font-family);
+  font-weight: 300;
+  font-size: 1.75rem;
+  line-height: 100%;
+  letter-spacing: 6px;
+  color: var(--primary-white-color);
+  margin-bottom: 12px;
+}
+
+.main__description-rion {
+  font-family: var(--primary-font-family);
+  font-weight: 400;
+  font-size: 6.5rem;
+  line-height: 100px;
+  letter-spacing: 26px;
+  color: var(--primary-white-color);
+  position: relative;
+  left: -27px;
+}
+
+.main__line-text {
+  margin-right: 92px;
+}
+
+.line {
+  width: 317px;
+  border: 1px solid var(--primary-white-color);
+  margin-bottom: 266px;
+  margin-top: 250px;
+}
+
+.main__text {
+  font-family: var(--primary-font-family);
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 100%;
+  color: var(--primary-white-color);
+}
+
+.copypaste {
+  float: right;
+  margin-top: auto;
+
+  font-family: var(--primary-font-family);
+  font-weight: 600;
+  font-size: 20px;
   line-height: 100%;
   color: var(--primary-white-color);
 }
