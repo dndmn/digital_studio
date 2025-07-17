@@ -1,0 +1,47 @@
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #13131580;
+
+  &__img {
+    cursor: pointer;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    &-item {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 0.75rem;
+      line-height: 100%;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+  }
+
+  &__phone-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+}
+
+.about__studio {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 100%;
+  color: #FFFFFF;
+}
