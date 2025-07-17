@@ -8,13 +8,23 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
 }
 
 .header {
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: rgba(19, 19, 21, 0.5019607843);
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 24px 16px 24px 32px;
+    background-color: transparent;
+  }
+}
+@media (max-width: 384px) {
+  .header {
+    padding: 24px 16px 24px 18px;
+  }
 }
 .header__img {
   cursor: pointer;
@@ -37,6 +47,11 @@
   color: #FFFFFF;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .header__list {
+    display: none;
+  }
+}
 .header__phone-link {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -45,6 +60,11 @@
   color: #FFFFFF;
   text-decoration: none;
 }
+@media (max-width: 768px) {
+  .header__phone-link {
+    display: none;
+  }
+}
 
 .about__studio {
   font-family: "Roboto", sans-serif;
@@ -52,6 +72,30 @@
   font-size: 1.25rem;
   line-height: 100%;
   color: #FFFFFF;
+}
+
+.burger {
+  display: block;
+  background-color: rgba(19, 19, 21, 0.2509803922);
+  border: 1px solid #FFFFFF;
+  padding: 13px 13px 0 13px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+.burger:last-child {
+  padding-bottom: 7px;
+}
+.burger__line {
+  width: 22px;
+  height: 3px;
+  background-color: #FFFFFF;
+  margin-bottom: 6px;
+}
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
 }
 
 *,
@@ -144,13 +188,12 @@ table {
   left: -27px;
 }
 .main__digital-title {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 300;
   font-size: 28px;
   line-height: 100%;
   letter-spacing: 0.2em;
   color: #FFFFFF;
-  margin-bottom: 12px;
 }
 .main__digital-subtitle {
   font-family: Roboto, sans-serif;
@@ -235,4 +278,78 @@ table {
 .about__studio-text-work {
   margin-top: 36px;
   float: right;
+}
+
+.advantages {
+  padding: 128px 0 64px 0;
+}
+.advantages__line {
+  position: relative;
+}
+.advantages__title {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0.2em;
+  color: #FFFFFF;
+  margin-bottom: 68px;
+}
+.advantages__title::after {
+  content: "";
+  position: absolute;
+  margin-left: 48px;
+  margin-top: 13px;
+  width: 745px;
+  height: 1px;
+  background-color: #FFFFFF;
+}
+.advantages__block {
+  display: flex;
+  gap: 12px;
+}
+.advantages__block-result-title {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  color: #FFFFFF;
+  margin-bottom: 32px;
+}
+.advantages__block-result-description {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+.advantages__block-lang-title {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  color: #FFFFFF;
+  margin-bottom: 70px;
+}
+.advantages__block-lang-description {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+.advantages__block-item-title {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  color: #FFFFFF;
+  margin-bottom: 32px;
+}
+.advantages__block-item-description {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */

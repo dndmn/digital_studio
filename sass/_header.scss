@@ -3,6 +3,15 @@
   padding-bottom: 16px;
   background-color: #13131580;
 
+  @media (max-width: 768px) {
+    padding: 24px 16px 24px 32px;
+    background-color: transparent;
+  }
+
+  @media (max-width: 384px) {
+    padding: 24px 16px 24px 18px;
+  }
+
   &__img {
     cursor: pointer;
   }
@@ -26,6 +35,10 @@
       color: #FFFFFF;
       cursor: pointer;
     }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__phone-link {
@@ -35,6 +48,10 @@
     line-height: 100%;
     color: #FFFFFF;
     text-decoration: none;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }
 
@@ -44,4 +61,29 @@
   font-size: 1.25rem;
   line-height: 100%;
   color: #FFFFFF;
+}
+
+.burger {
+  display: block;
+  background-color: #13131540;
+  border: 1px solid #FFFFFF;
+  padding: 13px 13px 0 13px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+
+  &:last-child {
+    padding-bottom: 7px;
+  }
+
+  &__line {
+    width: 22px;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin-bottom: 6px;
+  }
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 }
